@@ -7,9 +7,9 @@
 
 ## 1.1 Latar Belakang
 
-Kebiasaan belajar merupakan determinan internal yang krusial bagi capaian performa akademik mahasiswa. Fenomena di lapangan menunjukkan adanya variasi pola belajar yang dipengaruhi oleh manajemen waktu, strategi belajar, disiplin, serta pemanfaatan teknologi informasi.
+Kebiasaan belajar merupakan determinan internal yang krusial bagi capaian akumulatif performa akademik mahasiswa. Fenomena di lapangan menunjukkan adanya diversitas pola belajar yang dipengaruhi oleh manajemen waktu, strategi kognitif, tingkat disiplin, serta pemanfaatan teknologi informasi. Untuk memetakan kondisi ini secara objektif, diperlukan riset berbasis survei yang akurat.
 
-Karena populasi mahasiswa tersusun dalam kelompok kelas (*cluster*), maka penelitian ini menggunakan metode **Two-Stage Cluster Sampling** agar proses pengambilan sampel menjadi lebih efisien tanpa mengurangi representativitas hasil penelitian.
+Secara struktural, populasi mahasiswa di perguruan tinggi terorganisasi di dalam kompartemen kelas (cluster). Pengambilan sampel acak sederhana secara langsung (Simple Random Sampling) pada seluruh populasi sering kali tidak efisien secara logistik dan operasional. Oleh karena itu, metode Two-Stage Cluster Sampling diterapkan sebagai solusi metodologis. Metode ini mampu mengakomodasi struktur populasi alami yang berkelompok sekaligus menekan biaya dan waktu survei tanpa mengorbankan kaidah keterwakilan ilmiah (representativeness).
 
 ---
 
@@ -28,23 +28,28 @@ Karena populasi mahasiswa tersusun dalam kelompok kelas (*cluster*), maka peneli
 
 # BAB II METODOLOGI PENELITIAN
 
-## Populasi
+## 2.1 Populasi dan Sampel
 
 - Jumlah kelas : **6 kelas**
+- Populasi Utama ($N$): **Terdiri dari 6 kelas mahasiswa**
+- Sampel Tahap I ($n$): **Dipilih 2 kelas secara acak dari total 6 kelas**
+- Populasi Mahasiswa di Cluster Terpilih: **Total $52$ mahasiswa yang berada di dalam 2 kelas yang terpilih tersebut**
+- Sampel Tahap II ($m$): **Dipilih/diambil $33$ mahasiswa yang merespons penuh instrumen penelitian dari total $52$ mahasiswa pada cluster terpilih**
 
-## Tahap I
+## 2.2 Kerangka Teoretis Dua Tahap (Two-Stage Cluster Sampling)
+Untuk memahami asal-usul angka bobot dan peluang pada output analisis, berikut adalah struktur matematis peluang inklusi bertahap yang digunakan:
 
-Dipilih sebanyak **2 kelas** secara acak.
+## 1. Tahap I
 
-$$
-P_1=\frac{2}{6}=0.333333
-$$
+Setiap kelas memiliki peluang yang sama untuk terpilih sebesar $P_1$. Dengan jumlah total kelas dalam populasi $N = 6$ dan kelas sampel yang diambil $n = 2$, maka rumusnya:
+
+$$P_1 = \frac{n}{N} = \frac{2}{6} = 0,3333333$$
 
 ---
 
-## Tahap II
+## 2. Tahap II
 
-Jumlah mahasiswa pada kedua kelas
+Peluang mahasiswa terpilih di dalam kelas yang sudah memenangkan tahap pertama disebut $P_2$. Dari total $52$ mahasiswa di kelas terpilih, sebanyak $33$ mahasiswa berpartisipasi mengisi kuesioner. Maka rumusnya:
 
 $$
 52 \text{ mahasiswa}
@@ -64,31 +69,18 @@ $$
 
 ---
 
-## Probabilitas Akhir
+## 3. Probabilitas Akhir
 
-$$
-P=P_1\times P_2
-$$
+Peluang total seorang mahasiswa terpilih dari keseluruhan populasi dari tahap pertama hingga tahap kedua adalah perkalian komposit dari $P_1$ dan $P_2$:
 
-$$
-=\frac26\times\frac{33}{52}
-$$
-
-$$
-=0.2115385
-$$
+$$P = P_1 \times P_2 = \frac{2}{6} \times \frac{33}{52} = \frac{66}{312} = 0,2115385$$
 
 ---
 
-## Bobot Sampling
+## 4. Bobot Sampling
+Bobot sampling ($w$) adalah kebalikan matematis dari probabilitas elemen akhir ($1/P$). Nilai ini merepresentasikan nilai keterwakilan sampel terhadap populasi asal.
 
-$$
-w=\frac1P
-$$
-
-$$
-w=4.727273
-$$
+$$w = \frac{1}{P} = \frac{1}{0,2115385} = 4,727273$$
 
 Artinya satu responden mewakili sekitar **4,73 mahasiswa** pada populasi.
 
@@ -97,12 +89,13 @@ Artinya satu responden mewakili sekitar **4,73 mahasiswa** pada populasi.
 # BAB III HASIL DAN PEMBAHASAN
 
 ## 3.1 Uji Validitas
+Uji validitas menggunakan korelasi Pearson Product-Moment dengan teknik Corrected Item-Total Correlation, yaitu mengorelasikan skor tiap item ke-$i$ dengan skor total kuesioner setelah dikurangi item ke-$i$ tersebut ($Y - X_i$) agar tidak terjadi overestimation (kelebihan taksiran) validitas.
 
-Nilai
+Rumus dasar korelasi item-total:
 
-$$
-r_{tabel}=0.355
-$$
+$$r_{\text{hitung}} = \frac{\text{Cov}(X_i, Y - X_i)}{\sigma_{X_i} \cdot \sigma_{(Y - X_i)}}$$
+
+Dengan jumlah sampel responden $n = 33$, nilai derajat kebebasan ($df = n - 2 = 31$) pada tingkat signifikansi $\alpha = 5\%$, diperoleh nilai konstanta $r_{\text{tabel}} = 0,355$. Item pernyataan dinyatakan Valid apabila syarat $r_{\text{hitung}} > 0,355$ terpenuhi. 
 
 ### Hasil
 
@@ -133,10 +126,19 @@ $$
 
 - Item valid : **14**
 - Item gugur : **6**
+  
+> Sebanyak 14 Item dinyatakan VALID dan dipertahankan untuk analisis utama, sedangkan 6 item gugur (P3, P6, P14, P16, P18, P20) dieksklusi secara permanen dari pemrosesan berikutnya.
 
 ---
 
 # 3.2 Uji Reliabilitas
+Uji reliabilitas diaplikasikan eksklusif hanya terhadap 14 item yang berstatus valid dengan estimasi koefisien kohesi internal Cronbach's Alpha ($\alpha$). 
+
+Rumus dasarnya:
+
+$$\alpha = \frac{k}{k-1} \left(1 - \frac{\sum \sigma_i^2}{\sigma_t^2}\right)$$
+
+Dimana $k = 14$ (kuantitas item valid), $\sum \sigma_i^2$ merupakan akumulasi nilai varians skor dari masing-masing item valid, dan $\sigma_t^2$ menyatakan nilai varians dari skor total gabungan 14 item tersebut.
 
 Cronbach Alpha
 
@@ -154,7 +156,13 @@ maka instrumen memiliki reliabilitas **sangat tinggi**.
 
 ---
 
-# 3.3 Statistik Deskriptif
+# 3.3 Statistik Deskriptif / Total Scoring
+
+Skor total dihitung dengan menjumlahkan bobot nilai empiris jawaban responden ($1$ sampai $4$) khusus untuk $14$ item yang valid.
+
+$$\text{Skor Total}_j = \sum_{i \in \text{valid}} P_{ij}
+
+$$Dimana $j$ merupakan indeks pengenal responden dari sampel ke-1 hingga sampel ke-33. Output deskriptif sebaran nilai total skor dari R adalah sebagai berikut:
 
 |Statistik|Nilai|
 |---------|------:|
@@ -169,6 +177,7 @@ maka instrumen memiliki reliabilitas **sangat tinggi**.
 ---
 
 # 3.4 Indeks Kebiasaan Belajar
+Untuk memudahkan standardisasi interpretasi nilai menjadi indikator persentase kedekatan performa sampel terhadap performa ideal (rentang skala 0–100%), nilai skor total diubah menjadi bentuk variabel Indeks.
 
 Skor maksimum
 
@@ -198,48 +207,31 @@ $$
 ---
 
 # 3.5 Estimasi Mean
+Dalam Two-Stage Cluster Sampling, estimasi parameter rata-rata populasi dihitung menggunakan pendekatan rata-rata terbobot (weighted mean). Rumus umumnya adalah:
 
-$$
-\bar{x}_w=
-\frac{\sum w_i x_i}
-{\sum w_i}
-$$
+$$\bar{x}_w = \frac{\sum (w_j \times \text{Indeks}_j)}{\sum w_j}$$
 
-Karena bobot sama,
+Oleh karena nilai bobot penimbang ($w_j$) pada setiap unit sampel bernilai konstan seragam akibat penarikan sampel yang proporsional ($w_j = 4,727273$), maka konstanta bobot dapat dieliminasi secara aljabar sehingga menyederhanakan rumusnya kembali ke rata-rata aritmetika biasa:
 
-$$
-\bar{x}=70.18398
-$$
+$$\bar{x}_w = \frac{4,727273 \sum \text{Indeks}_j}{33 \times 4,727273} = \frac{\sum \text{Indeks}_j}{33} = 70,18398\%$$
 
 ---
 
 # 3.6 Standard Error
 
-$$
-SE=\frac{SD}{\sqrt{33}}
-$$
+Standard Error ($SE$) mengukur besarnya fluktuasi, deviasi, atau tingkat kerentanan galat nilai estimasi rata-rata sampel jika dilakukan sampling berulang kali.
 
-$$
-SE=2.510372
-$$
+$$SE = \frac{SD}{\sqrt{m}} = \frac{14,42099}{\sqrt{33}} = \frac{14,42099}{5,744563} = 2,510372\%$$
 
 ---
 
-# 3.7 Confidence Interval
+# 3.7 Interval Kepercayaan 95% (confidence Interval)
 
-95%
+Interval kepercayaan berfungsi mengurung nilai parameter rata-rata kebiasaan belajar populasi yang riil menggunakan batas toleransi nilai kritis distribusi Z pada tingkat kepercayaan $95\%$ ($Z_{\alpha/2} = 1,96$).
 
-Lower
+$$\text{Batas Bawah} = \bar{x}_w - (1,96 \times SE) = 70,18398 - (1,96 \times 2,510372) = 65,26365\%$$
 
-$$
-65.26365
-$$
-
-Upper
-
-$$
-75.10431
-$$
+$$\text{Batas Atas} = \bar{x}_w + (1,96 \times SE) = 70,18398 + (1,96 \times 2,510372) = 75,10431\%$$
 
 Interpretasi:
 
@@ -248,48 +240,47 @@ Interpretasi:
 ---
 
 # 3.8 Perbandingan Metode
+Berikut merupakan visualisasi komparatif efisiensi parameter estimasi antara metode acak sederhana (SRS) dengan klaster dua tahap (Two-Stage Cluster) berdasarkan kalkulasi R:
 
 |Parameter|SRS|Cluster|
 |---------|------:|------:|
 |Mean|70.18|70.18|
 |SE|2.51|2.51|
 
+> Nilai estimasi rata-rata dan kesalahan baku ($SE$) kedua metode bernilai identik dikarenakan rancangan sampling ini menghasilkan pembobotan unit yang seragam (self-weighting design). Kondisi ini terjadi karena proporsi sebaran ukuran klaster sampel terhadap populasinya seimbang.
 ---
 
 # 3.9 Design Effect
 
-$$
-Deff=1
-$$
+Design Effect ($Deff$) mengevaluasi efisiensi varians dari desain sampling kelompok (cluster) terhadap pembanding kontrol berupa sampling acak sederhana (SRS) dengan ukuran sampel setara.
+
+$$Deff = \frac{SE_{\text{cluster}}^2}{SE_{\text{SRS}}^2} = \frac{(2,510372)^2}{(2,510372)^2} = 1$$
 
 Interpretasi:
 
-Desain Cluster memiliki efisiensi yang sama dengan Simple Random Sampling.
+Nilai $Deff = 1$ bermakna bahwa variasi data kebiasaan belajar antar-kelas (antar-cluster) bersifat homogen atau seragam. Struktur variasi ini membuat penerapan teknik cluster bertahap memiliki tingkat ketelitian estimasi yang setara dengan SRS, namun unggul mutlak dari sisi kemudahan administrasi operasional pengumpulan data di lapangan. 
 
 ---
 
 # 3.10 Relative Standard Error
 
-$$
-RSE=
-\frac{SE}{Mean}\times100
-$$
+$RSE$ digunakan sebagai metrik penilaian derajat akurasi hasil penaksiran sampel dalam satuan persentase.
 
-$$
-RSE=3.576845\%
-$$
+$$RSE = \left( \frac{SE_{\text{cluster}}}{\text{Estimasi}_{\text{cluster}}} \right) \times 100 = \left( \frac{2,510372}{70,18398} \right) \times 100 = 3,576845\%$$
 
-Karena
+interpretasi:
 
-$$
-RSE<25\%
-$$
-
-maka estimasi memiliki presisi yang sangat baik.
+> Nilai estimasi dikategorikan memiliki presisi sangat tinggi dan andal jika nilai indikator $RSE < 25\%$. Berhubung nilai $RSE$ riset ini hanya menyentuh angka $3,58\%$, maka kesimpulan hasil survei ini dinyatakan sangat valid, akurat, dan aman digunakan untuk memetakan kondisi populasi.
 
 ---
 
 # 3.11 Analisis Indikator
+
+Untuk membedah rincian dimensi internal kebiasaan belajar mahasiswa, dilakukan penghitungan rata-rata pada setiap indikator soal terkait (skala 0-100%). Perhitungannya menggunakan fungsi rerata baris komponen item pembentuk indikator, dibagi batas respons tertinggi (4), lalu diindekskan ke pengali 100%.
+
+$$\text{Indeks Indikator} = \frac{\text{Rata-rata Skor Item Indikator}}{4} \times 100$$
+
+Berikut adalah urutan capaian indikator dari performa terbaik hingga yang paling lemah berdasarkan output data dataframe indikator pada R:
 
 |Indikator|Nilai|
 |---------|------:|
@@ -301,6 +292,10 @@ maka estimasi memiliki presisi yang sangat baik.
 |Strategi Belajar|68.94%|
 |Interaksi Belajar|68.94%|
 |Motivasi Belajar|64.39%|
+
+interpretasi Komponen Indikator:
+> - Dimensi Pemanfaatan Teknologi ($78,79\%$) menempati posisi puncak performa. Data ini menafsirkan secara empiris bahwa mahasiswa sangat mahir mendayagunakan platform digital, gawai, dan sistem manajemen pembelajaran untuk mempercepat pencarian sumber studi.
+> - Sebaliknya, dimensi Motivasi Belajar ($64,39\%$) jatuh sebagai nilai terendah. Kondisi ini mencerminkan adanya hambatan pada aspek stimulus internal mahasiswa; mereka cenderung kurang terdorong untuk belajar secara mandiri apabila tidak ada tekanan penugasan wajib atau ujian dari pihak dosen pengampu.
 
 ---
 
@@ -320,9 +315,7 @@ Secara keseluruhan, hasil analisis indikator menunjukkan bahwa kebiasaan belajar
 
 ## Rekomendasi
 
-- Meningkatkan motivasi belajar mahasiswa.
-- Mempertahankan penggunaan teknologi dalam pembelajaran.
-- Penelitian berikutnya dapat menggunakan jumlah cluster yang lebih banyak untuk populasi yang lebih heterogen.
+Secara umum, program studi disarankan untuk mempertahankan aspek pemanfaatan teknologi yang telah menunjukkan capaian tertinggi, serta memberikan perhatian lebih pada peningkatan motivasi belajar, disiplin belajar, strategi belajar, dan interaksi belajar mahasiswa. Upaya tersebut dapat dilakukan melalui program mentoring akademik, pelatihan strategi belajar efektif, penguatan manajemen waktu, serta peningkatan aktivitas diskusi dan kolaborasi dalam proses pembelajaran. Dengan pengembangan yang lebih seimbang pada seluruh indikator, diharapkan kualitas kebiasaan belajar mahasiswa dapat meningkat dan berdampak positif terhadap pencapaian akademik.
 
 ---
 
