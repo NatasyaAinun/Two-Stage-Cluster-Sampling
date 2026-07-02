@@ -319,4 +319,7 @@ Secara umum, program studi disarankan untuk mempertahankan aspek pemanfaatan tek
 
 ---
 
+## Link Kuisioner
+https://forms.gle/Yj6ugw7fx4cjZEum6 
+
 
