@@ -258,7 +258,7 @@ $$Deff = \frac{SE_{\text{cluster}}^2}{SE_{\text{SRS}}^2} = \frac{(2,510372)^2}{(
 
 Interpretasi:
 
-Nilai $Deff = 1$ bermakna bahwa variasi data kebiasaan belajar antar-kelas (antar-cluster) bersifat homogen atau seragam. Struktur variasi ini membuat penerapan teknik cluster bertahap memiliki tingkat ketelitian estimasi yang setara dengan SRS, namun unggul mutlak dari sisi kemudahan administrasi operasional pengumpulan data di lapangan. 
+> Nilai $Deff = 1$ bermakna bahwa variasi data kebiasaan belajar antar-kelas (antar-cluster) bersifat homogen atau seragam. Struktur variasi ini membuat penerapan teknik cluster bertahap memiliki tingkat ketelitian estimasi yang setara dengan SRS, namun unggul mutlak dari sisi kemudahan administrasi operasional pengumpulan data di lapangan. 
 
 ---
 
