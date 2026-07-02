@@ -182,14 +182,10 @@ $$
 Indeks=\frac{Skor}{56}\times100
 $$
 
-Contoh
 
-$$
-\frac{54}{56}\times100
-=
-96.43
-$$
-
+```math
+\frac{54}{56}\times100=96.43
+```
 ---
 
 ## Hasil
