@@ -326,29 +326,4 @@ Secara keseluruhan, hasil analisis indikator menunjukkan bahwa kebiasaan belajar
 
 ---
 
-# Struktur Repository
 
-```
-Two-Stage-Cluster-Sampling/
-│
-├── README.md
-├── data/
-│   ├── data_kuesioner.xlsx
-│   └── data_valid.csv
-│
-├── script/
-│   └── analisis.R
-│
-├── output/
-│   ├── hasil_validitas.xlsx
-│   ├── hasil_reliabilitas.xlsx
-│   ├── grafik.png
-│   └── tabel_indikator.csv
-│
-└── laporan/
-    └── Laporan.pdf
-```
-
-````
-
-Format ini sudah sesuai dengan gaya dokumentasi di GitHub, menggunakan heading Markdown, tabel, daftar, dan persamaan LaTeX (`$$...$$`) yang akan dirender oleh GitHub pada bagian matematika yang didukung atau tetap terbaca sebagai Markdown.
