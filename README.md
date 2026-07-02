@@ -1,9 +1,4 @@
 # Two-Stage-Cluster-Sampling
-
-Tentu. Kalau yang kamu maksud **format GitHub**, biasanya menggunakan **Markdown (.md)** sehingga bisa langsung di-upload ke GitHub dan tampil rapi. Berikut template dari laporanmu dalam format `README.md`.
-
-````markdown
-# Analisis Two-Stage Cluster Sampling
 ## Studi Kasus: Kebiasaan Belajar Mahasiswa
 
 ---
