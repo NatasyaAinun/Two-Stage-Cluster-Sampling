@@ -308,12 +308,13 @@ maka estimasi memiliki presisi yang sangat baik.
 
 ## Kesimpulan
 
-- Terdapat **14 item valid**.
-- Cronbach Alpha sebesar **0.916** menunjukkan reliabilitas sangat tinggi.
-- Estimasi rata-rata indeks sebesar **70.18%**.
-- Confidence Interval berada pada **65.26%–75.10%**.
-- Design Effect sebesar **1**.
-- Relative Standard Error sebesar **3.58%**, menunjukkan hasil estimasi sangat presisi.
+Berdasarkan hasil analisis terhadap delapan indikator kebiasaan belajar mahasiswa, diperoleh bahwa pemanfaatan teknologi merupakan indikator dengan capaian tertinggi, yaitu sebesar 78,79%, yang menunjukkan bahwa mahasiswa telah mampu memanfaatkan berbagai media dan teknologi digital secara optimal dalam mendukung proses pembelajaran. Selain itu, indikator fokus belajar, evaluasi belajar, dan perencanaan belajar juga memperoleh nilai yang tergolong baik, yaitu masing-masing sebesar 72,35%, 71,21%, dan 70,45%, sehingga dapat disimpulkan bahwa sebagian besar mahasiswa telah memiliki kemampuan yang cukup baik dalam menjaga konsentrasi, melakukan evaluasi terhadap hasil belajar, serta menyusun rencana belajar secara terarah.
+
+Sementara itu, indikator disiplin belajar, strategi belajar, dan interaksi belajar masing-masing memperoleh nilai 68,94%, yang menunjukkan bahwa ketiga aspek tersebut berada pada kategori cukup baik. Hasil ini mengindikasikan bahwa mahasiswa telah memiliki kebiasaan belajar yang relatif positif, namun masih memerlukan peningkatan terutama dalam menjaga konsistensi belajar, menerapkan strategi belajar yang lebih efektif, serta meningkatkan interaksi selama proses pembelajaran.
+
+Di sisi lain, motivasi belajar memperoleh nilai paling rendah, yaitu sebesar 64,39%. Hasil tersebut menunjukkan bahwa motivasi internal mahasiswa masih menjadi aspek yang perlu mendapatkan perhatian lebih. Rendahnya motivasi belajar dapat memengaruhi konsistensi mahasiswa dalam mengikuti proses pembelajaran dan berpotensi berdampak pada pencapaian akademik apabila tidak dilakukan upaya peningkatan melalui dukungan dari lingkungan akademik maupun pengembangan motivasi diri.
+
+Secara keseluruhan, hasil analisis indikator menunjukkan bahwa kebiasaan belajar mahasiswa telah berada pada kategori baik, dengan kekuatan utama terletak pada pemanfaatan teknologi sebagai pendukung proses belajar. Meskipun demikian, aspek motivasi, disiplin, strategi belajar, dan interaksi belajar masih perlu ditingkatkan agar seluruh komponen kebiasaan belajar berkembang secara lebih seimbang dan mampu mendukung peningkatan prestasi akademik mahasiswa secara optimal.
 
 ---
 
